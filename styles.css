@@ -1,0 +1,134 @@
+@font-face{
+  font-family:'digital-7';
+  src: url("digital-7_(mono).ttf");
+ }
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator{
+  margin: auto;
+  width: 75%;
+  max-width: 250px;
+  border: 5px black solid;
+  border-left: 8px black solid;
+  border-right: 8px black solid;
+  border-bottom: 15px black solid;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 14px 14px 14px 14px;
+  box-shadow: 10px 10px 31px 11px #222 inset, 11px 11px 15px 2px #222;
+  /* background-color: rgb(121, 23, 23); */
+}
+
+input {
+  padding-right: 10px;
+  text-align: right;
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 3px 4px 5px 2px black inset, 0px 4px 5px 2px rgb(39, 24, 121) inset;
+  background-color: #99a77a;
+  font-family: 'digital-7';
+  font-weight: 600;
+
+}
+.calc-bar-container{
+  height: 35px;
+}
+.calc-bar {
+  height: 90%;
+  padding-top: 6px;
+  font-size: 0.8em;
+  letter-spacing: 0.8px;
+}
+.input-output {
+  height: 50px;
+  font-size: 1.5em;
+  letter-spacing: 1.3px;
+}
+.buttons-container {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 15px;
+  background-color: rgb(201, 209, 218);
+  padding: 10px;
+  border-radius: 14px 14px 14px 14px;
+  border: 3px groove #000;
+  box-shadow: 0px 0px 10px 2px #003 inset;
+}
+
+button {
+  align-items: center;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 35px;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 14px;
+}
+
+.btn-cols-2 {
+  grid-column: span 2;
+}
+.btn-cols-1 {
+  grid-row: span 1;
+  background-image: radial-gradient(100% 100% at 100% 0, #2ba535 0, rgb(43, 152, 98) 100%);
+}
+#equalToSymbol{
+  color:white;
+  font-size: 28px;
+  border-color: mintcream;
+  background-color: rgb(30, 147, 210);
+}
+
+#deleteSymbol {
+  background-color: orange;
+  border-color: mintcream;
+  color: #000;
+}
+#clearSymbol {
+  background-color: rgb(254, 66, 66);
+  border-color: mintcream;
+  color: black;
+}
+button:focus {
+  box-shadow: #ffffff 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #000 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#deleteSymbol {
+  font-size: 22px;
+  color: rgb(69, 68, 68);
+}
