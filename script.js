@@ -482,10 +482,6 @@ function processFinalAnswer(){
     createFreshHistory();
     createTemporaryAnswer();
   }
-  // else{
-  //   displayCalculationBar("=")
-  //   inputOutputEl.value = evaluationTillNowInOutputBar()
-  // }
 }
 
 let iconEl = document.createElement('i');
