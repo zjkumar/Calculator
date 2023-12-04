@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
 @font-face{
   font-family:'digital-7';
   src: url("digital-7_(mono).ttf");
@@ -37,7 +39,7 @@ input {
   border-radius: 8px;
   box-shadow: 3px 4px 5px 2px black inset, 0px 4px 5px 2px rgb(39, 24, 121) inset;
   background-color: #99a77a;
-  font-family: 'digital-7';
+  font-family: "Roboto";
   font-weight: 600;
 
 }
@@ -76,7 +78,7 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: "Roboto";
   height: 35px;
   justify-content: center;
   position: relative;
